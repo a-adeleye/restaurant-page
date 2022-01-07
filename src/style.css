@@ -56,6 +56,19 @@ nav {
 
 .navigation {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home{
+    color: #d41b27;
+}
+
+.navigation a{
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .signUp {
@@ -129,6 +142,10 @@ button {
   color: white;
   border: 1px solid #d41b27;
   background-color: #d41b27;
+}
+
+.ratings > .fas{
+    font-size: 0.7rem;
 }
 
 .image {

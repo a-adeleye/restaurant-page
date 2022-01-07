@@ -1,1 +1,3 @@
-console.log('Oluwa seun')
+import {createHeader} from './header'
+
+createHeader();
