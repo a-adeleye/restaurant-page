@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat+Alternates:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Poiret+One&family=Tangerine:wght@700&display=swap');
 *{
     font-family: var(--defaultFont);
 }
 
 :root {
-  --defaultFont: "Inter", sans-serif;
+  --defaultFont: 'Montserrat Alternates', sans-serif;
   --secondaryFont: "Playfair Display", serif ;
 }
 
@@ -42,6 +41,7 @@ nav {
 
 .logo {
   color: #487516;
+  font-family: 'Tangerine', cursive;
 }
 
 .red {
@@ -246,6 +246,10 @@ button {
   margin-bottom: 15px;
 }
 
+.heading{
+  display: flex;
+}
+
 #contact-us{
     padding: 50px;
     margin: 0 auto;
@@ -253,6 +257,27 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.contact-us{
+background: #d41b27;
+color: white;
+border-top-left-radius: 30px;
+}
+
+.about-us{
+  border: 1px solid #d41b27;
+  color: #d41b27;
+  border-top-right-radius: 30px;
+}
+
+.about-us, .contact-us{
+  padding: 15px;
+  cursor: pointer;
+}
+
+.contact-us:hover, .about-us:hover{
+  transform: translateY(-10%);
 }
 
 .address{
@@ -287,6 +312,17 @@ button {
 
 .fa-phone{
     color: #00AAAD;
+}
+
+.who{
+  display: none;
+  font-family: 'Montez', cursive;
+  font-size: 3em;
+}
+.aboutUsText{
+  text-align: center;
+  line-height: 2;
+  display: none;
 }
 
 footer{

@@ -1,12 +1,31 @@
 export const createContactUs = () => {
-
-let content = document.querySelector('#content');
+  let content = document.querySelector("#content");
 
   let contactUs = document.createElement("section");
   contactUs.setAttribute("id", "contact-us");
 
-  let h2 = document.createElement("h2");
-  h2.textContent = "Contact Us";
+  let heading = document.createElement("div");
+  heading.className = "heading";
+
+  let contactUsTitle = document.createElement("h2");
+  contactUsTitle.className = "contact-us";
+  contactUsTitle.textContent = "Contact Us";
+
+  let aboutUsTitle = document.createElement("h2");
+  aboutUsTitle.className = "about-us";
+  aboutUsTitle.textContent = "About Us";
+
+  heading.appendChild(contactUsTitle);
+  heading.appendChild(aboutUsTitle);
+
+  let who = document.createElement("h3");
+  who.className = 'who';
+  who.textContent = 'Who We Are';
+
+  let aboutUsText = document.createElement("p");
+  aboutUsText.className = "aboutUsText";
+  aboutUsText.innerHTML =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque.<br> Sed viverra tellus in hac habitasse platea dictumst. Vehicula ipsum a arcu cursus vitae. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Ultrices neque ornare aenean euismod.";
 
   let separator = document.createElement("div");
   separator.className = "separator02";
@@ -27,7 +46,7 @@ let content = document.querySelector('#content');
 
     let i = document.createElement("i");
     i.className = addresses[j].class;
-    
+
     let h5 = document.createElement("h5");
     h5.textContent = addresses[j].address;
 
@@ -37,10 +56,13 @@ let content = document.querySelector('#content');
     address.appendChild(icon);
   }
 
-  contactUs.appendChild(h2);
+  contactUs.appendChild(heading);
   contactUs.appendChild(separator);
   contactUs.appendChild(address);
+  contactUs.appendChild(who);
+  contactUs.appendChild(aboutUsText);
 
   content.appendChild(contactUs);
-  console.log('Contact us loaded');
+
+  console.log("Contact us loaded");
 };
