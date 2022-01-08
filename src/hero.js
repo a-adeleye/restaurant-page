@@ -1,8 +1,8 @@
 export const createHero = () => {
   let content = document.querySelector("#content");
 
-  let heroDiv = document.createElement("div");
-  heroDiv.className = "hero";
+  let heroSection = document.createElement("section");
+  heroSection.className = "hero";
 
   //Create text div
 
@@ -80,9 +80,9 @@ export const createHero = () => {
 
   // Append children
 
-  heroDiv.appendChild(textDiv);
-  heroDiv.appendChild(imageDiv);
+  heroSection.appendChild(textDiv);
+  heroSection.appendChild(imageDiv);
 
-  content.appendChild(heroDiv);
+  content.appendChild(heroSection);
   console.log("Hero loaded");
 };
