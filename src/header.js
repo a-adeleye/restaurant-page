@@ -18,7 +18,7 @@ export const createHeader = () => {
     home.innerText = "Home";
   
     menu.href = "#menu";
-    menu.innerText = "menu";
+    menu.innerText = "Menu";
   
     contact.href = "#contact-us";
     contact.innerText = "Contact";
