@@ -2,7 +2,7 @@
 
 ### This is a restaurant web page for a restaurant in Dubai.
 
-<div align="center"><img src="./images/foody -restaurant.png" alt="screenshot of website" width="900" /></div>
+<div align="center"><img src="./dist/images/foody -restaurant.png" alt="screenshot of website" width="900" /></div>
 
 **Note:** This Website works best with High Resolution Screens (1080p and up). Check the [improvements section](#improvements) for responsive updates.
 
