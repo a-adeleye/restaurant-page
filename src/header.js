@@ -31,7 +31,7 @@ export const createHeader = () => {
     signUp.className = "signUp";
   
     let cart = document.createElement("img");
-    cart.src = "../src/bag.png";
+    cart.src = "./images/bag.png";
   
     let btn = document.createElement("button");
     btn.textContent = "Sign Up";

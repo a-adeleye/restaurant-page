@@ -13,31 +13,31 @@ export const createMenu = () => {
       name: "Vegan mola",
       side: "With vegetable",
       price: "AED 35.00",
-      src: "../vegan-1.png",
+      src: "./images/vegan-1.png",
     },
     {
       name: "Potatew",
       side: "With turkey",
       price: "AED 40.00",
-      src: "../fries-2.png",
+      src: "./images/fries-2.png",
     },
     {
       name: "Leafy salad",
       side: "With Turkey",
       price: "AED 33.00",
-      src: "../turkey-salad.png",
+      src: "./images/turkey-salad.png",
     },
     {
       name: "Spagheroo",
       side: "With chomachu",
       price: "AED 30.00",
-      src: "../spaghetti.png",
+      src: "./images/spaghetti.png",
     },
     {
       name: "Yamachu",
       side: "With leafaju",
       price: "AED 50.00",
-      src: "../carrot.png",
+      src: "./images/carrot.png",
     },
   ];
 

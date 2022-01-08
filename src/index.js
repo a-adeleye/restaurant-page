@@ -1,3 +1,6 @@
+import './style.css';
+import './separator.css';
+
 import {createHeader} from './header';
 import {createHero} from './hero';
 import {createMenu} from './menu';

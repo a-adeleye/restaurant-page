@@ -42,9 +42,15 @@ export const createHero = () => {
   let profilesDiv = document.createElement("div");
   profilesDiv.className = "profiles";
 
+  let profileImages = ["url('./images/user1.png')",
+  "url('./images/user2.png')",
+  "url('./images/user3.png')",
+  "url('./images/user4.png')"];
+
   for (let i = 0; i < 4; i++) {
     let profile = document.createElement("div");
     profile.className = "profile";
+    profile.style.backgroundImage = profileImages[i];
     profilesDiv.appendChild(profile);
   }
 
@@ -60,9 +66,11 @@ export const createHero = () => {
     if (j > 3) {
       i.className = "fas fa-star-half";
       ratingsDiv.appendChild(i);
-    }
-    i.className = "fas fa-star";
+    } else {
+      i.className = "fas fa-star";
     ratingsDiv.appendChild(i);
+    }
+    
   }
 
   reviewDiv.appendChild(ratingsDiv);
@@ -74,7 +82,7 @@ export const createHero = () => {
   imageDiv.className = "image";
 
   let image = document.createElement("img");
-  image.src = "../src/food.png";
+  image.src = "./images/food.png";
 
   imageDiv.appendChild(image);
 
